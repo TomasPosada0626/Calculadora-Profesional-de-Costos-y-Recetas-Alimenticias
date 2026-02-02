@@ -1,0 +1,117 @@
+# Calculadora de Insumos para Recetas Alimenticias
+
+**Versión de escritorio en Python + Tkinter**
+
+---
+
+## Descripción general
+
+Esta aplicación permite calcular de manera precisa y profesional los insumos, costos y precios de venta de productos alimenticios a partir de recetas personalizadas. Está diseñada para microempresas, emprendimientos gastronómicos, laboratorios de alimentos y cualquier persona que requiera controlar costos y márgenes en la producción de alimentos.
+
+El sistema automatiza el proceso que normalmente se realiza en hojas de cálculo, integrando una interfaz gráfica amigable, cálculos dinámicos y reportes claros para la toma de decisiones.
+
+---
+
+## Características principales
+
+- **Carga y gestión de recetas desde archivo JSON**: Permite definir múltiples recetas, cada una con ingredientes, porcentajes, precios y pasos de preparación.
+- **Cálculo automático de insumos**: Ajusta cantidades de ingredientes según el gramaje y la cantidad de envases deseados, incluyendo margen de producción extra.
+- **Cálculo de costos y precios**:
+  - Costos de formulación, envase, mano de obra, servicios, administrativos y otros.
+  - Precio de venta sugerido, margen de utilidad, impuestos y ganancia total.
+  - Costo por kilogramo de producción.
+- **Simulación de precios variables**: Calcula automáticamente precios con descuento, promociones (NxM), precios mayoristas y precios especiales para clientes.
+- **Visualización clara y profesional**: Tablas con intercalado de color, scroll independiente, y campos editables para descuentos y promociones.
+- **Visualización de pasos de preparación**: Muestra instrucciones detalladas y registro sanitario de cada receta.
+- **Interfaz intuitiva**: Todo se actualiza en tiempo real al cambiar cualquier parámetro (gramaje, cantidad, costo de envase, etc.).
+
+---
+
+## Instalación y requisitos
+
+- **Python 3.8 o superior**
+- No requiere dependencias externas (usa solo Tkinter y librerías estándar)
+
+### Pasos de instalación
+
+1. Clona o descarga este repositorio en tu equipo.
+2. Asegúrate de tener Python instalado y configurado en tu sistema.
+3. Ejecuta la aplicación con:
+
+   ```bash
+   python app.py
+   ```
+
+---
+
+## Uso de la aplicación
+
+1. **Selecciona la receta** en el menú desplegable.
+2. **Ingresa la cantidad de envases, gramaje por envase y costo de envase+tapa**.
+3. Haz clic en **Mostrar ingredientes** para ver la tabla de insumos y costos.
+4. Consulta las tablas de costos, ganancias y precios variables (descuentos, promociones, mayorista, especial).
+5. Haz clic en **Preparación** para ver los pasos detallados y el registro sanitario.
+6. Modifica cualquier parámetro y observa cómo se actualizan todos los cálculos en tiempo real.
+
+---
+
+## Estructura del proyecto
+
+- `app.py`: Código principal de la aplicación y la interfaz gráfica.
+- `recetas.json`: Archivo de datos con todas las recetas, ingredientes, precios y preparaciones.
+- `README.md`: Este archivo de documentación.
+
+---
+
+## Ejemplo de flujo de trabajo
+
+1. El usuario selecciona "Salsa para Carnes".
+2. Ingresa 50 envases de 200g cada uno, con costo de envase+tapa de $300.
+3. La app calcula automáticamente:
+   - Cantidad exacta de cada ingrediente (con 10% extra de producción)
+   - Costos de formulación, envase, mano de obra, etc.
+   - Precio de venta sugerido, margen, impuestos y ganancia
+   - Costo por kilogramo
+   - Precios con descuento, promociones, mayorista y especial
+4. El usuario puede simular descuentos, promociones (ej: 2x3), o cambiar la cantidad mínima para mayorista.
+5. Puede consultar los pasos de preparación y el registro sanitario.
+
+---
+
+## Ventajas y aplicaciones
+
+- Elimina errores manuales de cálculo en Excel.
+- Permite simular escenarios de precios y márgenes en segundos.
+- Facilita la toma de decisiones para producción, ventas y promociones.
+- Útil para cotizaciones, control de costos y análisis de rentabilidad.
+- Adaptable a cualquier tipo de receta alimenticia.
+
+---
+
+## Personalización y extensibilidad
+
+- Puedes agregar nuevas recetas o modificar las existentes editando el archivo `recetas.json`.
+- El sistema es fácilmente adaptable a otros tipos de productos o fórmulas.
+- Se puede exportar la lógica a otros formatos (Excel, web, etc.) si se requiere.
+
+---
+
+## Proyecto en mejoras constantes y desarrollo activo
+
+Este proyecto está en evolución continua, incorporando nuevas funcionalidades, mejoras de usabilidad y optimizaciones según las necesidades de los usuarios y las tendencias del sector alimenticio. Se reciben sugerencias y aportes para seguir mejorando la herramienta.
+
+---
+
+## Licencia
+
+Este proyecto es de uso libre para fines educativos y empresariales. Puedes modificarlo y adaptarlo según tus necesidades.
+
+---
+
+## Contacto y soporte
+
+**Autor:** Tomás Posada  
+**Correo:** tomasposada67@gmail.com  
+**LinkedIn:** 
+
+Para sugerencias, mejoras o soporte, puedes abrir un issue en el repositorio o contactar directamente al autor.
