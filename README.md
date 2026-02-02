@@ -1,3 +1,15 @@
+<p align="center">
+  <b>Calculadora profesional de costos y recetas alimenticias</b><br>
+  <i>Python, Tkinter, JSON, Costeo alimenticio, Simulación de precios</i>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" />
+  <img src="https://img.shields.io/badge/Tkinter-GUI-blueviolet" />
+  <img src="https://img.shields.io/badge/JSON-Data-lightgrey" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+</p>
+
 # Calculadora de Insumos para Recetas Alimenticias
 
 **Versión de escritorio en Python + Tkinter**
